@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+
+:root {
+    --font-caprasimo: "Caprasimo", serif;
+    --font-outfit: "Outfit", sans-serif;
+    --body1:#2C2825;
+    --headline:#171615;
+    --caption:#575757;
+    --divider:#595959;
+    --accent:#FFC800;
+    
+}
+
+.ob{
+    font-family: var(--font-caprasimo);
+    font-weight: 400;
+    font-size: 7.5rem;
+    line-height: 92%;
+    letter-spacing: -3%;
+    font-style: normal;
+}
+.header-d{
+    font-family: var(--font-caprasimo);
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 92%;
+    letter-spacing: -3%;
+    font-style: normal;
+}
+.heading1{
+    font-family: var(--font-outfit);
+    font-weight: bold;
+    /* font-size: 3.125rem; */
+    font-size: clamp(2rem, 5vw, 3.125rem);
+    inline-size: 100%;
+    overflow-wrap: break-word;
+    line-height: 140%;
+    letter-spacing: -2%;
+    font-style: normal;
+}
+.heading2{
+    font-family: var(--font-outfit);
+    font-weight: bold;
+    /* font-size: 2.5rem; */
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    line-height: 110%;
+    letter-spacing: -2.5%;
+}
+.heading3{
+    font-family: var(--font-outfit);
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: 2%;
+}
+.heading4{
+    font-family: var(--font-outfit);
+    font-weight: bold;
+    font-size: 0.9375rem;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: -2.5%;
+}
+.paragraph-l{
+    font-family: var(--font-outfit);
+    font-weight: medium;
+    font-size: 1.5rem;
+    line-height: 140%;
+    letter-spacing: -1%;
+}
+.paragraph1{
+    font-family: var(--font-outfit);
+    font-weight: regular;
+    font-size: 1rem;
+    line-height: 140%;
+    letter-spacing: -2.5%;;
+}
+.paragraph2{
+    font-family: var(--font-outfit);
+    font-weight: medium;
+    font-size: 1.5rem;
+    line-height: 140%;
+    letter-spacing: -1%;;
+}
+.caption-l{
+    font-family: var(--font-outfit);
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 140%; 
+}
+.caption1{
+    font-family: var(--font-outfit);
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 140%;
+    letter-spacing: 2%;
+    color: var(--caption);
+
+}
+.navcap{
+    font-family: var(--font-outfit);
+    font-weight: bold;
+    font-size: 0.875rem;
+    line-height: 140%;
+    letter-spacing: 2%;
+    
+
+}
+.caption2{
+    font-family: var(--font-outfit);
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 140%;
+    letter-spacing: 0%;
+}
+
+.heroimg{
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.footer-wrapper{
+    background-color: var(--accent);
+    
+    background: linear-gradient(
+    to bottom, 
+    rgba(75, 70, 5, 0.2) 0%, 
+    rgba(75, 70, 5, 0.9) 100%
+    ), 
+    url('https://images.unsplash.com/photo-1680441774216-8a86795a687f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px 30px 0 0;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+/* Styling */
+.slider {
+
+
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.slider::before,
+.slider::after {
+    
+    content: "";
+    position: absolute;
+    z-index: 2;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
