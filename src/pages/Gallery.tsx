@@ -45,10 +45,10 @@ const Gallery = () => {
             alt: "Floral table arrangement"
         },
         {
-            caption: "EVENING BLOOM",
-            price: "$65/Bunch",
-            src: "https://images.unsplash.com/photo-1617176756162-447320192d98?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            alt: "Artistic floral stem"
+            caption: "DAWN BLOOM",
+            price: "$55/Bunch",
+            src: "https://images.unsplash.com/photo-1618667066353-06982fc2ea72?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            alt: "White tulip bouquet"
         },
 
     ];
@@ -65,12 +65,6 @@ const Gallery = () => {
             description: "Our selection of locally sourced flora brings natural resilience and effortless elegance to your home.",
             img: "https://images.unsplash.com/photo-1608656218680-e8be81ce71d7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             alt: "Native plant arrangement in a home"
-        },
-        {
-            heading: "CUSTOM FLORAL CONCEPTS",
-            description: "Your vision, our blooms. We build arrangements that are both personal and exquisitely simple.",
-            img: "https://images.unsplash.com/photo-1617176756162-447320192d98?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-            alt: "Custom floral concept for a commercial space"
         },
         {
             heading: "CUSTOM FLORAL CONCEPTS",
