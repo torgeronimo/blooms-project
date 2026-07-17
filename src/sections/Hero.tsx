@@ -1,5 +1,5 @@
 import heroImage from '../assets/hero-flower.png'
-import logo from '../assets/logo.png'
+import logo from '../assets/Logo.png'
 import sticker from '../assets/Sticker.png'
 
 const Hero = () => {
