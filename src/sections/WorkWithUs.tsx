@@ -1,5 +1,3 @@
-import React from 'react'
-
 const WorkWithUs = () => {
     return (
         <div className='section-wrapper'>
